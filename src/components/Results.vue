@@ -8,10 +8,15 @@
     <h1 class="Quiz">HSC Exam</h1>
     <h2 class="Name">Anonymous</h2>
 
-
-
   <div>
     <b-table :items="items"></b-table>
+  </div>
+
+  <div class="ml-auto">
+    <p>
+      Total:
+      <strong>{{ totalCorrect }}</strong>
+    </p>
   </div>  
 
 
@@ -24,12 +29,26 @@
 import marks from "./json/data.json";
 
 export default {
-  name: "student marks",
-  data() {
+  name: "student_marks",
+  data()
+  {
     return {
       items: marks
     };
-  }
+  },
+
+computed: {
+   totalCorrect(){
+     var total = 0
+     if(this.items){
+       this.items.forEach(element => {
+       total += parseInt(element.Correct)
+     })
+     }
+     return total
+   }
+}
+
 };
 </script>
 
