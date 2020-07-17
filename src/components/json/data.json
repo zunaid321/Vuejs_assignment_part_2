@@ -1,33 +1,34 @@
 [
     {
-        "ID": "1",
-        "Student Names": "Faisal",
-        "Maths": "100",
-        "Physics": "100",
-        "Chemistry": "100",
-        "English": "100",
-        "Final Score": "100",
-        "Grade": "A"
+        "Subjects": "Maths",
+        "Total Questions": "10",
+        "Untouched": "1",
+        "Wrong": "1",
+        "Correct": "8",
+        "%": "0.8"
     },
     {
-        "ID": "2",
-        "Student Names": "Zunaid",
-        "Maths": "90",
-        "Physics": "90",
-        "Chemistry": "90",
-        "English": "90",
-        "Final Score": "90",
-        "Grade": "A"
+        "Subjects": "Physics",
+        "Total Questions": "10",
+        "Untouched": "2",
+        "Wrong": "1",
+        "Correct": "7",
+        "%": "0.7"
     },
     {
-        "ID": "3",
-        "Student Names": "Lary",
-        "Maths": "70",
-        "Physics": "80",
-        "Chemistry": "60",
-        "English": "70",
-        "Final Score": "70",
-        "Grade": "B"
+        "Subjects": "Chemistry",
+        "Total Questions": "10",
+        "Untouched": "2",
+        "Wrong": "2",
+        "Correct": "6",
+        "%": "0.6"
+    },
+    {
+        "Subjects": "English",
+        "Total Questions": "10",
+        "Untouched": "0",
+        "Wrong": "3",
+        "Correct": "7",
+        "%": "0.7"
     }
 ]
-
