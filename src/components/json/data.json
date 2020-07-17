@@ -1,0 +1,33 @@
+[
+    {
+        "ID": "1",
+        "Student Names": "Faisal",
+        "Maths": "100",
+        "Physics": "100",
+        "Chemistry": "100",
+        "English": "100",
+        "Final Score": "100",
+        "Grade": "A"
+    },
+    {
+        "ID": "2",
+        "Student Names": "Zunaid",
+        "Maths": "90",
+        "Physics": "90",
+        "Chemistry": "90",
+        "English": "90",
+        "Final Score": "90",
+        "Grade": "A"
+    },
+    {
+        "ID": "3",
+        "Student Names": "Lary",
+        "Maths": "70",
+        "Physics": "80",
+        "Chemistry": "60",
+        "English": "70",
+        "Final Score": "70",
+        "Grade": "B"
+    }
+]
+
