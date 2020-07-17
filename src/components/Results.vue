@@ -8,14 +8,14 @@
     <h1 class="Quiz">HSC Exam</h1>
     <h2 class="Name">Anonymous</h2>
 
-  <div>
+  <div class="table">
     <b-table :items="items"></b-table>
   </div>
 
-  <div class="ml-auto">
+  <div class="result">
     <p>
       Total:
-      <strong>{{ totalCorrect }}</strong>
+      <strong>{{ totalCorrect }}/100</strong>
     </p>
   </div>  
 
@@ -45,7 +45,7 @@ computed: {
        total += parseInt(element.Correct)
      })
      }
-     return total
+     return (total/40)*100
    }
 }
 
@@ -54,4 +54,12 @@ computed: {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .result{
+    margin-left: 35%;
+    font-size: 2rem;
+  }
+  .table{
+    width: 50%;
+    margin-left: 24%;
+  }  
 </style>
