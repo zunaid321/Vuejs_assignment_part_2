@@ -5,22 +5,13 @@
 </template>
 
 <script>
+import marks from "./json/data.json";
+
 export default {
+  name: "student marks",
   data() {
     return {
-      items: [
-        {
-          ID: 1,
-          Student_Names: "Zunaid",
-          Math: 74,
-          Physics: 70,
-          Chemistry: 79,
-          English: 80,
-          Marks: 70,
-          Final_Score: 79,
-          Grade: "C"
-        }
-      ]
+      items: marks
     };
   }
 };
