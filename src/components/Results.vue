@@ -59,7 +59,7 @@ computed: {
     font-size: 2rem;
   }
   .table{
-    width: 50%;
-    margin-left: 24%;
+    width: 70%;
+    margin-left: 15%;
   }  
 </style>

@@ -5,7 +5,8 @@
         "Untouched": "1",
         "Wrong": "1",
         "Correct": "8",
-        "%": "0.8"
+        "%": "0.8",
+        "Highest Marks": "9"
     },
     {
         "Subjects": "Physics",
@@ -13,7 +14,8 @@
         "Untouched": "2",
         "Wrong": "1",
         "Correct": "7",
-        "%": "0.7"
+        "%": "0.7",
+        "Highest Marks": "8"
     },
     {
         "Subjects": "Chemistry",
@@ -21,7 +23,8 @@
         "Untouched": "2",
         "Wrong": "2",
         "Correct": "6",
-        "%": "0.6"
+        "%": "0.6",
+        "Highest Marks": "10"
     },
     {
         "Subjects": "English",
@@ -29,6 +32,7 @@
         "Untouched": "0",
         "Wrong": "3",
         "Correct": "7",
-        "%": "0.7"
+        "%": "0.7",
+        "Highest Marks": "9"
     }
 ]
