@@ -85,15 +85,24 @@ computed: {
      })
      }
      return (tw*0.25)
-   }
-
-   
-}
-
-
-
+   },
+},
 
 };
+//calculating percentage
+marks.forEach(element => {
+   element["%"] = (element.Correct - element.Wrong * 0.25) / element["Total Questions"]
+})
+//status
+if(marks){
+      marks.forEach(element => {
+         if (element["%"] < 0.7) {
+           element["Status"] = "Need Improvement!"
+         }
+         else
+          element["Status"] = "Perfect!"
+      })
+    }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
