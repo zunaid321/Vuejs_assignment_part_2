@@ -91,12 +91,24 @@ computed: {
 };
 //calculating percentage
 marks.forEach(element => {
-   element["%"] = (element.Correct - element.Wrong * 0.25) / element["Total Questions"]
+   element["%"] = Math.round(((element.Correct - element.Wrong * 0.25) / element["Total Questions"])*100)
 })
+
+//calculating marks lost
+marks.forEach(element => {
+   element["Marks Lost"] = element.Wrong * 0.25
+})
+
+//calculating total for each subject
+marks.forEach(element => {
+   element["Total"] = element.Correct - (element.Wrong * 0.25)
+})
+
+
 //status
 if(marks){
       marks.forEach(element => {
-         if (element["%"] < 0.7) {
+         if (element["%"] < 70) {
            element["Status"] = "Need Improvement!"
          }
          else
