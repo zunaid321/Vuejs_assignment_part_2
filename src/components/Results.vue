@@ -9,16 +9,30 @@
     <h2 class="Name">Anonymous</h2>
 
   <div class="table">
-    <b-table :items="items"></b-table>
+    <b-table :items="items"></b-table> 
+  </div>
+
+
+  <div class="result">
+    <p>
+      Correct:
+      <strong>{{ totalCorrect }}</strong>
+    </p>
   </div>
 
   <div class="result">
     <p>
-      Total:
-      <strong>{{ totalCorrect }}/100</strong>
+      Marks Deducted:
+      <strong>{{ totalWrong }}</strong>
     </p>
-  </div>  
+  </div>    
 
+  <div class="result">
+    <p>
+      Total:
+      <strong>{{ totalMarks }}/40</strong>
+    </p>
+  </div>    
 
 </div>
 
@@ -34,20 +48,50 @@ export default {
   {
     return {
       items: marks
+      
     };
   },
 
 computed: {
-   totalCorrect(){
+   totalMarks(){
+     var correct = 0
+     var wrong = 0
      var total = 0
      if(this.items){
        this.items.forEach(element => {
-       total += parseInt(element.Correct)
+       correct += parseInt(element.Correct)
+       wrong += parseInt(element.Wrong)
+     })
+     total = correct - (0.25*wrong)
+     }
+     return total
+   },
+
+   totalCorrect(){
+     var tc = 0
+     if(this.items){
+       this.items.forEach(element => {
+       tc += parseInt(element.Correct)
      })
      }
-     return (total/40)*100
+     return tc
+   },
+
+   totalWrong(){
+     var tw = 0
+     if(this.items){
+       this.items.forEach(element => {
+       tw += parseInt(element.Wrong)
+     })
+     }
+     return (tw*0.25)
    }
+
+   
 }
+
+
+
 
 };
 </script>
